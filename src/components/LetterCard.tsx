@@ -16,7 +16,7 @@ const LetterCard: React.FC<LetterCardProps> = ({ onExpand }) => {
   };
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center1 md:justify-center min-h-screen px-4 py-8">
+    <div className="relative z-10 flex flex-col items-center justify-center1  md:justify-center min-h-screen px-4 py-8">
       <div 
         className={`bg-white/90 rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full transform transition-all duration-500 ${
           isExpanded ? 'scale-110 md:scale-125' : ''
@@ -25,16 +25,16 @@ const LetterCard: React.FC<LetterCardProps> = ({ onExpand }) => {
           fontFamily: 'Kanit, serif',
         }}
       >
-        <div className="space-y-4 text-gray-600">
+        <div className="flex flex-col gap-4 text-gray-600">
           <div className={`text-right text-sm text-pink-600 mb-4 ${isVisible ? 'animate-text-fade-in' : ''}`} style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
             February 14, 2026
           </div>
           
           <h2 className={`text-2xl md:text-3xl font-bold text-pink-500 mb-4 text-center ${isVisible ? 'animate-text-slide-up' : ''}`} style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-            ถึงที่รักของเค้า,
+            ถึงที่รักของเค้า
           </h2>
           
-          <div className="space-y-3 text-base md:text-lg leading-relaxed text-pink-400">
+          <div className="flex flex-col gap-3 text-base md:text-lg leading-relaxed text-pink-400">
             <p className={isVisible ? 'animate-text-slide-up' : ''} style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
               {`เค้าอยากจะบอกว่า "Happy Valentine & Happy Anniversary 7 years" ของเรานะครับ`}
             </p>

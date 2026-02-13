@@ -70,9 +70,9 @@ const TimeCounter: React.FC<TimeCounterProps> = ({ onNext }) => {
   const pad = (value: number) => value.toString().padStart(2, '0')
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center h-screen px-4 py-8">
-      <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full transform transition-all duration-500 animate-fade-in">
-        <div className="text-center space-y-6">
+    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
+      <div className="bg-white/90  backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full transform transition-all duration-500 animate-fade-in">
+        <div className="text-center flex flex-col gap-4">
           {/* Title */}
           <h1 className="text-2xl md:text-3xl font-bold text-pink-600 mb-2">
             เราคบกันนานแค่ไหนแล้วนะ?
@@ -84,13 +84,13 @@ const TimeCounter: React.FC<TimeCounterProps> = ({ onNext }) => {
           </p>
 
           {/* Line 1: Y / M / D */}
-          <div className="space-y-4 mt-4">
+          <div className="flex flex-col gap-4 pt-5 pb-10 ">
             <div className="text-3xl md:text-3xl font-semibold text-pink-500">
               {elapsed.years} ปี : {elapsed.months} เดือน : {elapsed.days} วัน
             </div>
 
             {/* Line 2: Hr / Min / Sec (live) */}
-            <div className="text-xl md:text-2xl font-semibold text-pink-500">
+            <div className="text-xl  md:text-2xl font-semibold text-pink-500">
               {pad(elapsed.hours)} ชั่วโมง : {pad(elapsed.minutes)} นาที :{' '}
               {pad(elapsed.seconds)} วินาที
             </div>

@@ -46,9 +46,9 @@ const Carousel: React.FC<CarouselProps> = ({ onNext }) => {
   // };
 
   return (
-    <div className="relative flex flex-col items-center  md:justify-start h-screen px-4 py-8 ">
-      <div className="w-full max-w-2xl md:max-w-4xl h-[80vh] md:h-fit">
-        <h2 className="text-3xl font-bold text-pink-700 text-center mb-8">
+    <div className="relative flex flex-col items-center  md:justify-start min-h-screen px-4 py-20 md:py-5 ">
+      <div className="w-full flex flex-col gap-10 max-w-2xl md:max-w-4xl h-[80vh] md:h-fit">
+        <h2 className="text-3xl md:text-5xl font-bold text-pink-700 text-center ">
           รวมความทรงจำของเรา
         </h2>
 

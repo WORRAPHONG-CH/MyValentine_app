@@ -69,7 +69,7 @@ const InfiniteGallery: React.FC = () => {
   }, [loadMoreImages]);
 
   return (
-    <div className="relative flex flex-col items-center  md:justify-start  min-h-screen px-4 py-20 transform transition-all duration-500 animate-fade-in">
+    <div className="relative flex flex-col gap-5 items-center  md:justify-start  min-h-screen px-4 py-20 transform transition-all duration-500 animate-fade-in ">
       <h2 className="text-3xl font-bold text-center text-pink-700 mb-8">
         ความสดใสของคุณแฟนสุดน่ารัก
       </h2>
@@ -79,7 +79,9 @@ const InfiniteGallery: React.FC = () => {
         grid-cols-2
         sm:grid-cols-2
         md:grid-cols-3
-        lg:grid-cols-4"
+        lg:grid-cols-4
+        
+        "
       >
         {images.map((image) => (
           <div

@@ -85,7 +85,7 @@ const ValentineMusicPlayer = () => {
       </div>
 
       {/* Music Badge */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center">
+      <div className="fixed bottom-5 left-0 right-0 z-50  flex justify-center">
         <div className="w-full max-w-md mx-4 mb-4 bg-gradient-to-r from-pink-400 to-pink-300 text-white rounded-2xl shadow-2xl p-4 backdrop-blur-md border border-white/30">
 
           <div className="flex items-center justify-between">
