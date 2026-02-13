@@ -46,16 +46,16 @@ const Carousel: React.FC<CarouselProps> = ({ onNext }) => {
   // };
 
   return (
-    <div className="relative flex flex-col items-center  md:justify-start  min-h-screen px-4 py-8 ">
+    <div className="relative flex flex-col items-center  md:justify-start h-screen px-4 py-8 ">
       <div className="w-full max-w-2xl md:max-w-4xl h-[80vh] md:h-fit">
         <h2 className="text-3xl font-bold text-pink-700 text-center mb-8">
           รวมความทรงจำของเรา
         </h2>
 
-        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="relative bg-white rounded-2xl  shadow-xl overflow-hidden">
 
           {/* Image */}
-          <div className="relative w-full h-[60vh] md:h-[60vh] ">
+          <div className="relative w-full h-[50vh] md:h-[60vh] ">
             {images.map((item, index) => (
               <img
                 key={item.id}

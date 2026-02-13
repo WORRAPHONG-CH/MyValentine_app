@@ -9,7 +9,7 @@ const Envelope: React.FC<EnvelopeProps> = ({ onOpen }) => {
   const [isVisible] = useState(true);
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
+    <div className="relative z-10 flex flex-col items-center justify-center h-screen px-4 py-8">
       <div className={`relative w-80 h-64 md:w-96 md:h-72 cursor-pointer transform transition-transform duration-300 hover:scale-105 ${isVisible ? 'animate-fade-in' : ''}`}
           onClick={onOpen}
           // onMouseEnter={() => setIsHovered(true)}

@@ -8,7 +8,7 @@ const IntroCard: React.FC<IntroCardProps> = ({ onNext }) => {
   const [isVisible] = useState(true);
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
+    <div className="relative z-10 flex flex-col items-center justify-center h-screen px-4 py-8">
       <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full transform transition-all duration-500 animate-fade-in">
         <div className="text-center space-y-6">
           <div className={`text-6xl md:text-7xl mb-4 animate-bounce ${isVisible ? 'animate-text-fade-in' : ''}`} style={{ animationDelay: '0.2s' }}>💌</div>
