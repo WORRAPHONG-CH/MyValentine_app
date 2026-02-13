@@ -55,7 +55,7 @@ const Carousel: React.FC<CarouselProps> = ({ onNext }) => {
         <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
 
           {/* Image */}
-          <div className="relative w-full h-[500px] md:h-[510px] ">
+          <div className="relative w-full h-[60vh] md:h-[60vh] ">
             {images.map((item, index) => (
               <img
                 key={item.id}
