@@ -62,7 +62,7 @@ const ValentineMusicPlayer = () => {
 
   return (
     <>
-      <audio ref={audioRef} src="/src/assets/music/GiveMeYourForever.mp3" loop />
+      <audio ref={audioRef} src="/public/music/GiveMeYourForever.mp3" loop />
 
       {/* Floating Hearts */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden z-40">
