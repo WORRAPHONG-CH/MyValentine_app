@@ -16,7 +16,7 @@ const LetterCard: React.FC<LetterCardProps> = ({ onExpand }) => {
   };
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
+    <div className="relative z-10 flex flex-col items-center justify-center1 md:justify-center min-h-screen px-4 py-8">
       <div 
         className={`bg-white/90 rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full transform transition-all duration-500 ${
           isExpanded ? 'scale-110 md:scale-125' : ''
@@ -36,7 +36,7 @@ const LetterCard: React.FC<LetterCardProps> = ({ onExpand }) => {
           
           <div className="space-y-3 text-base md:text-lg leading-relaxed text-pink-400">
             <p className={isVisible ? 'animate-text-slide-up' : ''} style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-              {`ถ้าเห็นข้อความนี้ก็อยากจะบอกว่า "Happy Valentine & Happy Anniversary 7 years" ของเรานะครับ`}
+              {`เค้าอยากจะบอกว่า "Happy Valentine & Happy Anniversary 7 years" ของเรานะครับ`}
             </p>
             
             <p className={isVisible ? 'animate-text-slide-up' : ''} style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
@@ -44,12 +44,12 @@ const LetterCard: React.FC<LetterCardProps> = ({ onExpand }) => {
             </p>
 
             <p className={isVisible ? 'animate-text-slide-up' : ''} style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
-              สุดท้ายนี้อยากจะบอกว่ารักมากๆเลยนะ อยู่กับเค้าแบบนี้นานๆเลยนะครับ อยากอยู่ในทุกช่วงเวลาเลย
+              สุดท้ายนี้อยากจะบอกว่ารักมากๆเลยนะ อยากอยู่ในทุกช่วงเวลาของชีวิตเลย อยู่กับเค้าแบบนี้นานๆเลยนะครับ 
             </p>
             
             
             <p className={`mt-6 text-right font-semibold text-pink-500 ${isVisible ? 'animate-text-slide-up' : ''}`} style={{ animationDelay: '1.2s', animationFillMode: 'both' }}>
-              รักมากๆเลยนะ❤️,<br />
+              รักมากๆเลยนะ❤️<br />
               จากคุณแฟน 
             </p>
           </div>

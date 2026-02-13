@@ -79,18 +79,18 @@ const TimeCounter: React.FC<TimeCounterProps> = ({ onNext }) => {
           </h1>
 
           {/* Sub text */}
-          <p className="text-sm text-pink-500">
+          <p className="text-sm md:text-lg text-pink-500">
             {`เริ่มคบตั้งแต่ 20 Feb 2019 `}
           </p>
 
           {/* Line 1: Y / M / D */}
           <div className="space-y-4 mt-4">
-            <div className="text-3xl md:text-xl font-semibold text-pink-500">
+            <div className="text-3xl md:text-3xl font-semibold text-pink-500">
               {elapsed.years} ปี : {elapsed.months} เดือน : {elapsed.days} วัน
             </div>
 
             {/* Line 2: Hr / Min / Sec (live) */}
-            <div className="text-xl md:text-xl font-semibold text-pink-500">
+            <div className="text-xl md:text-2xl font-semibold text-pink-500">
               {pad(elapsed.hours)} ชั่วโมง : {pad(elapsed.minutes)} นาที :{' '}
               {pad(elapsed.seconds)} วินาที
             </div>
@@ -99,7 +99,7 @@ const TimeCounter: React.FC<TimeCounterProps> = ({ onNext }) => {
           {/* Next button */}
           <button
             onClick={onNext}
-            className="mt-8 px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg w-full md:w-auto"
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg w-full md:w-auto md:text-xl"
           >
             ไปต่อเลยรอไรร 💘
           </button>

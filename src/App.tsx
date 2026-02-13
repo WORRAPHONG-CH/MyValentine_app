@@ -8,8 +8,9 @@ import Carousel from './components/Carousel'
 import BackButton from './components/BackButton'
 import MusicPlayer from './components/MusicPlayer'
 import TimeCounter from './components/TimeCounter'
+import InfiniteGallery from './components/Gallery'
 
-type AppState = 'intro' | 'time' | 'envelope' | 'letter' | 'carousel'
+type AppState = 'intro' | 'time' | 'envelope' | 'letter' | 'carousel' | 'gallery' 
 
 function App() {
   const [currentState, setCurrentState] = useState<AppState>('intro')
@@ -30,6 +31,10 @@ function App() {
     setCurrentState('carousel')
   }
 
+  const handleNextGallery = () =>{ 
+    setCurrentState('gallery')
+  }
+
   const handleBack = () => {
     if (currentState === 'time') {
       setCurrentState('intro')
@@ -39,6 +44,8 @@ function App() {
       setCurrentState('envelope')
     } else if (currentState === 'carousel') {
       setCurrentState('letter')
+    } else if (currentState === 'gallery'){
+      setCurrentState('carousel')
     }
   }
 
@@ -52,7 +59,8 @@ function App() {
       {currentState === 'time' && <TimeCounter onNext={handleTimeNext} />}
       {currentState === 'envelope' && <Envelope onOpen={handleEnvelopeOpen} />}
       {currentState === 'letter' && <LetterCard onExpand={handleLetterExpand} />}
-      {currentState === 'carousel' && <Carousel />}
+      {currentState === 'carousel' && <Carousel onNext={handleNextGallery}/>}
+      {currentState === 'gallery' && <InfiniteGallery /> }
     </div>
   )
 }

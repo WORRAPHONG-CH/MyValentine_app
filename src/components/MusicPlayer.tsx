@@ -92,7 +92,7 @@ const ValentineMusicPlayer = () => {
             <div>
               <p className="text-xs opacity-80">Now Playing</p>
               <p className="font-semibold text-sm">
-                Valentine Love Song
+                Give Me Your Forever
               </p>
             </div>
 

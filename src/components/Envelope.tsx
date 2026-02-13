@@ -37,8 +37,8 @@ const Envelope: React.FC<EnvelopeProps> = ({ onOpen }) => {
         
         {/* Click hint */}
         <div className={`absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center ${isVisible ? 'animate-text-slide-up' : ''}`} style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
-          <p className="text-pink-700 font-semibold text-lg md:text-xl animate-pulse">
-            Click to open
+          <p className="text-pink-500 font-semibold text-lg md:text-xl animate-pulse">
+            ลองเปิดอ่านดูสิ
           </p>
         </div>
       </div>
